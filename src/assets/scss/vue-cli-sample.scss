@@ -52,3 +52,14 @@ body,
 .box{
     margin-top: px2rem(10);
 }
+
+.bar-content{
+    position: absolute;
+    top: px2rem(100);
+    bottom: 0;
+    width: 100%;
+
+    img{
+        max-width: 100%;
+    }
+}

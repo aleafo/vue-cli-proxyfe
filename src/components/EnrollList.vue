@@ -3,7 +3,7 @@
         <ul v-infinite-scroll="loadMore" infinite-scroll-disabled="loading" infinite-scroll-distance="10">
     
             <li class="enroll-item" v-for="x in list" :key="x.id">
-                <router-link :to="{name: 'detail', query: {openId: params.openId, appId: params.appId, qaId: x.id}}">
+                <router-link :to="{name: 'index', query: {openId: params.openId, appId: params.appId, qaId: x.id}}">
                     <div class="top-pic">
                         <img :src="x.topPic" alt="">
                     </div>
@@ -115,8 +115,11 @@ export default {
             let apiUrl = '/api/act/get-list.json';
 
             this.isFirstLoad = this.params.pageNo == 1 ? true : false;
-
-            this.$http.get(apiUrl, {params: this.params})
+            
+            //模拟请求数据的延迟
+            setTimeout(() => {
+                // console.log('aaa')
+                this.$http.get(apiUrl, {params: this.params})
                 .then(res => {
                     this.isLoading = false;
 
@@ -133,6 +136,7 @@ export default {
                 }).catch(function (err) {
                     console.warn(err);
                 });
+            }, 1500);
         }
     },
     filters: {

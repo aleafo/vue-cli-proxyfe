@@ -1,25 +1,25 @@
 <template>
   <transition name="slide-fade" @afterEnter="afterEnter" @beforeLeave="beforeLeave">
-  <div class="page index">
-  
-    <div class="bar-header">
-      <div class="mint-navbar">
-        <router-link :to="{name:'index', query:auth}" class="mint-tab-item is-selected">
-          <div class="mint-tab-item-label">活动报名</div>
-        </router-link>
-  
-        <router-link :to="{name:'my', query:auth}" class="mint-tab-item">
-          <div class="mint-tab-item-label">我的报名</div>
-        </router-link>
+    <div class="page index">
+
+      <div class="bar-header">
+        <div class="mint-navbar">
+          <router-link :to="{name:'index', query:auth}" class="mint-tab-item is-selected">
+            <div class="mint-tab-item-label">活动报名</div>
+          </router-link>
+
+          <router-link :to="{name:'index', query:auth}" class="mint-tab-item">
+            <div class="mint-tab-item-label">我的报名</div>
+          </router-link>
+        </div>
       </div>
-    </div>
-  
-    <div class="bar-content">
+
+      <div class="bar-content">
         <enroll-list></enroll-list>
-      
+
+      </div>
+
     </div>
-  
-  </div>
   </transition>
 </template>
 
@@ -39,14 +39,14 @@ export default {
       auth: {}
     }
   },
-  activated(){
+  activated() {
     document.title = '活动报名';
   },
-  mounted(){
+  mounted() {
     this.$http.post('/api/act/get-data.json');
     // 禁用微信分享
     this.util.hideWxShare();
-    this.auth = eventBus.auth; 
+    this.auth = eventBus.auth;
   },
   methods: {
     afterEnter() {
@@ -77,3 +77,6 @@ export default {
   }
 }
 </script>
+<style lang="sass">
+
+</style>

@@ -12,7 +12,7 @@ import 'mint-ui/lib/style.css'
 
 import './assets/scss/yx-skin-base.scss'
 import './assets/scss/yx-iconfont.css'
-import './assets/scss/alliance.scss'
+import './assets/scss/vue-cli-sample.scss'
 
 Vue.use(MintUI)
 
