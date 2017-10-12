@@ -1,6 +1,7 @@
 # officialsite
 
 > yx official site
+[cnblog introduction](http://www.cnblogs.com/aleafo/p/7654792.html)
 
 ## Build Setup
 
