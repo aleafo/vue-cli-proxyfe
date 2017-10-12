@@ -1,0 +1,48 @@
+{
+    "result": [
+        {
+            "id": 1,
+            "topPic": "/static/img/banner.jpg",
+            "title": "爸爸去哪儿专属旅行计划",
+            "startTime": "2017-10-27 8:00",
+            "endTime": "2017-10-31 18:00",
+            "enrollmentNumber": 100,
+            "residueNumber": -1,
+            "limitTotal": 1,
+            "status": 2
+        },
+        {
+            "id": 2,
+            "topPic": "/static/img/banner.jpg",
+            "title": "爸爸去哪儿专属旅行计划",
+            "startTime": "2017-10-27 8:00",
+            "endTime": "2017-10-31 18:00",
+            "enrollmentNumber": 100,
+            "residueNumber": 3,
+            "limitTotal": 1,
+            "status": 3
+        },
+        {
+            "id": 3,
+            "topPic": "/static/img/banner.jpg",
+            "title": "爸爸去哪儿专属旅行计划",
+            "startTime": "2017-10-27 8:00",
+            "endTime": "2017-10-31 18:00",
+            "enrollmentNumber": 100,
+            "residueNumber": 3,
+            "limitTotal": 1,
+            "status": 4
+        },
+        {
+            "id": 4,
+            "topPic": "/static/img/banner.jpg",
+            "title": "爸爸去哪儿专属旅行计划",
+            "startTime": "2017-10-27 8:00",
+            "endTime": "2017-10-31 18:00",
+            "enrollmentNumber": 100,
+            "residueNumber": 3,
+            "limitTotal": 1,
+            "status": 6
+        }
+    ]
+}

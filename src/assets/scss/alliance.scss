@@ -1,0 +1,54 @@
+/**
+++++++++++++++++++++++++++++++++++++++++++++
+
+效果图750，按照实际效果图测量px数应用 
+
+selector{
+    
+    width: px2rem(20);
+}
+
+++++++++++++++++++++++++++++++++++++++++++++
+
+**/
+@function px2rem($px) {
+    @return ($px / 20) * 1rem * 0.5;
+}
+
+html,
+body, 
+#app, 
+.page{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mint-tab-container,
+.mint-tab-container-wrap,
+.mint-tab-container-item
+{
+    height: 100%;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling : touch;  
+    overflow-x: hidden;
+    z-index: 1;
+    margin-top: -1px;
+    padding-top: 1px;
+    height: calc(100%+1px);
+}
+
+.box{
+    margin-top: px2rem(10);
+}
